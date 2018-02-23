@@ -17,6 +17,7 @@ scrape_configs:
 On Kubernetes clusters, Prometheus is run as a Deployment, configured with a ConfigMap, and accessed via a Service or Ingress.
 
 ```
+kubectl apply -f addons/prometheus/namespace.yaml
 kubectl apply -f addons/prometheus -R
 ```
 
